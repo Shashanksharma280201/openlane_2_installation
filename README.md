@@ -74,7 +74,10 @@ sourcing an activate script in its bin directory.
 
 Install openlane using PIP ( is this gives error then install pipx and run the same command using pipx)
 ```
-python3 -m pip install openlane
-python3 -m openlane --dockerized --smoke-test
+sudo python3 -m pip install openlane
+# if the above code does not work then try :
+sudo python3 -m pip install openlane --break-system-packages
+
+sudo python3 -m openlane --dockerized --smoke-test
 ```
 If the smoke test finishes successfully, then you are ready to use OpenLane2.
