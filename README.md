@@ -44,9 +44,37 @@ Follow the steps mentiond in this [document](https://openlane2.readthedocs.io/en
 ## Docker installation 
 Works for Windows, macOS and Linux (x86-64, aarch64 with emulation).
 
-Follow the steps mentiond in this [document](https://openlane2.readthedocs.io/en/latest/getting_started/docker_installation/index.html)
+Follow the steps mentiond in this [document](https://docs.docker.com/engine/install/ubuntu/)
 
 Do note you'll need to add `--dockerized` right after `openlane` in most CLI invocations.
 
+### to check is docker is installed run the command mentioned:
+![Screenshot from 2023-09-11 16-50-45](https://github.com/Shashanksharma280201/openlane_2_installation/assets/79470436/de004ce5-c25a-480e-a760-b54392ebd3a3)
 
+```
+docker --version
+python3 --version
+python3 -m pip --version
+```
 
+the following should be the updated versions of all the mentioned softwares:
+```
+$ docker --version
+Docker version 20.10.16, build aa7e414fdc
+$ python3 --version
+Python 3.10.5
+$ python3 -m pip --version
+pip 21.0 from /usr/lib/python3.10/site-packages/pip (python 3.10)
+...
+Once an environment has been created, you may wish to activate it, e.g. by
+sourcing an activate script in its bin directory.
+```
+
+## Openlane2 installation commands:
+
+Install openlane using PIP ( is this gives error then install pipx and run the same command using pipx)
+```
+python3 -m pip install openlane
+python3 -m openlane --dockerized --smoke-test
+```
+If the smoke test finishes successfully, then you are ready to use OpenLane2.
