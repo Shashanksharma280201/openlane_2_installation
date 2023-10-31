@@ -70,6 +70,41 @@ Once an environment has been created, you may wish to activate it, e.g. by
 sourcing an activate script in its bin directory.
 ```
 
+## Installation of ngspice magic 
+
+Download the tarball from [Download](https://sourceforge.net/projects/ngspice/files/) to a local directory
+
+```
+cd $HOME
+sudo apt-get install libxaw7-dev
+tar -zxvf ngspice-41.tar.gz
+cd ngspice-41
+mkdir release
+cd release
+../configure  --with-x --with-readline=yes --disable-debug
+sudo make
+sudo make install
+```
+
+magic 
+
+```
+sudo apt-get install m4
+sudo apt-get install tcsh
+sudo apt-get install csh
+sudo apt-get install libx11-dev
+sudo apt-get install tcl-dev tk-dev
+sudo apt-get install libcairo2-dev
+sudo apt-get install mesa-common-dev libglu1-mesa-dev
+sudo apt-get install libncurses-dev
+git clone https://github.com/RTimothyEdwards/magic
+cd magic
+./configure
+sudo make
+sudo make install
+```
+
+
 ## Openlane2 installation commands:
 
 Install openlane using PIP ( is this gives error then install pipx and run the same command using pipx)
@@ -81,3 +116,8 @@ sudo python3 -m pip install openlane --break-system-packages
 sudo python3 -m openlane --dockerized --smoke-test
 ```
 If the smoke test finishes successfully, then you are ready to use OpenLane2.
+
+
+
+
+
