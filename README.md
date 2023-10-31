@@ -117,7 +117,7 @@ sudo python3 -m openlane --dockerized --smoke-test
 ```
 If the smoke test finishes successfully, then you are ready to use OpenLane2.
 
-
+![2](https://github.com/Shashanksharma280201/openlane_2_installation/assets/79470436/7b90bb58-f461-461d-b883-662651b619fc)
 
 
 
