@@ -107,6 +107,14 @@ sudo make install
 
 ## Openlane2 installation commands:
 
+```
+cd $HOME
+git clone https://github.com/The-OpenROAD-Project/OpenLane
+cd OpenLane
+make
+make test
+```
+
 Install openlane using PIP ( is this gives error then install pipx and run the same command using pipx)
 ```
 sudo python3 -m pip install openlane
